@@ -16,12 +16,16 @@
             align-items: center;
             color: white;
             font-size: 12px;
+            /* position: fixed;
+            top: 0px;
+            z-index: inherit; */
         }
 
         .top-bar a {
             text-decoration: none;
             color: #666;
             margin: 0 4px;
+            font-size: 12px;
         }
 
         .top-bar a:hover {
@@ -34,6 +38,10 @@
             padding: 5px 10px;
             border-radius: 5px;
             font-weight: bold;
+        }
+        
+        .highlight-button:hover a {
+            background-color: white;
         }
 
         .header {
