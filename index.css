@@ -10,17 +10,18 @@
 
         .top-bar {
             background-color: #232b38;
-            padding: 10px 20px;
+            padding: 0px 10px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             color: white;
+            font-size: 12px;
         }
 
         .top-bar a {
             text-decoration: none;
             color: #666;
-            margin: 0 10px;
+            margin: 0 4px;
         }
 
         .top-bar a:hover {
@@ -223,3 +224,29 @@
         .contact a:hover {
             text-decoration: underline;
         }
+
+        .text-box {
+            position: relative;
+            display: inline-block;
+            padding: 20px;
+          
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .new-label {
+            position: absolute;
+            top: 5px; /* Moves the label above the box */
+            left: 90%;
+            transform: translateX(-50%);
+            background: red; /* Background color for NEW label */
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 4px 8px;
+            border-radius: 16px;
+        }
+
+        
+        
