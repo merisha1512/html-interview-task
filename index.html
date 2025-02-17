@@ -55,7 +55,7 @@
 
         .menu {
             display: flex;
-            justify-content: center;
+            justify-content: start;
             background: #1a1f25;
             padding: 10px;
         }
@@ -64,15 +64,22 @@
             color: white;
             text-decoration: none;
             margin: 0 15px;
-            font-weight: bold;
+            /* font-weight: bold; */
         }
 
         .conference-banner {
-            background: #1abc9c;
+            background: url('./assets/header_background.png');
             color: white;
-            text-align: center;
+            /* text-align: center; */
             padding: 30px;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
+
+        .conference-banner img {
+            width: 100%;
+        }
+        
 
         .events {
             display: flex;
@@ -89,33 +96,37 @@
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
 
+
         .locations {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 2.45fr);
             gap: 20px;
             padding: 40px;
+            justify-items: center;
         }
 
         .location {
             position: relative;
             color: white;
             padding: 20px;
+            text-align: center;
         }
 
         .location img {
             width: 100%;
-            border-radius: 5px;
+            border-radius: 2px;
             display: block;
-            transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+            transition: transform 0.5s  ease-in-out, opacity 0.5s  ease-in-out;
         }
         .location:hover img {
             transform: scale(1.05);
             opacity: 0.8;
+            cursor: pointer;
         }
 
         .location-text {
             position: absolute;
-            bottom: 10px;
+            bottom: 20px;
             left: 20px;
             font-size: 24px;
             font-weight: bold;
@@ -237,18 +248,39 @@
         <h2>Student Safety and Security Conference & Workshop</h2>
     </div>
 
+    <div style="padding: 0px 45px">
     <div class="menu">
-        <a href="#">Apply to Speak</a>
-        <a href="#">Register Now!</a>
-        <a href="#">Contact Us</a>
+        <a href="#">Online Registration</a>
+        <a href="#">Offline Registration</a>
+        <a href="#">Group Registration</a>
+        <a href="#">Conference Brochure</a>
+        <a href="#">ONE2ONE</a>
+        <a href="#">Vendor Demos Schedule</a>
+    </div>
     </div>
 
+    <div style="padding: 0px 45px">
     <div class="conference-banner">
         <h2>National Student Safety & Security Conference & Workshop</h2>
         <p>Co-located Events</p>
+        <div style="display: flex; gap: 10px;">
+            <div>
+                <img src="./assets/sro-white.png" alt="Los Angeles">
+            </div>
+            <div>
+                <img src="./assets/smh-white-1536x493.png" alt="Los Angeles">
+            </div>
+            <div>
+                <img src="./assets/asb-white.png" alt="Los Angeles">
+            </div>
+            <div>
+                <img src="./assets/CSCS-1536x512.png" alt="Los Angeles">
+            </div>
+        </div>
+    </div>
     </div>
 
-    <div class="events">
+    <!-- <div class="events">
         <div class="event">
             <h3>SRO Congress</h3>
             <p>School Resource Officers</p>
@@ -265,24 +297,28 @@
             <h3>Cybersecurity Summit</h3>
             <p>Schools & Colleges</p>
         </div>
-    </div>
+    </div> -->
 
     <div class="locations">
         <div class="location">
-            <img src="Los-Angeles.png" alt="Los Angeles">
+            <img src="./assets/Los-Angeles.png" alt="Los Angeles">
             <div class="location-text">Los Angeles <br><span class="location-subtext">Postponed</span></div>
         </div>
         <div class="location">
-            <img src="webAsset-2.png" alt="Orlando">
+            <img src="./assets/webAsset-2.png" alt="Orlando">
             <div class="location-text">Orlando <br><span class="location-subtext">April 30-May 2, 2025</span></div>
         </div>
         <div class="location">
-            <img src="webAsset-3.png" alt="NYC">
+            <img src="./assets/webAsset-3.png" alt="NYC">
             <div class="location-text">NYC <br><span class="location-subtext">August 6-8, 2025</span></div>
         </div>
         <div class="location">
-            <img src="webAsset-4.png" alt="Houston">
+            <img src="./assets/webAsset-4.png" alt="Houston">
             <div class="location-text">Houston <br><span class="location-subtext">Oct 22-24, 2025</span></div>
+        </div>
+        <div class="location">
+            <img src="./assets/webAsset-5.png" alt="Las vegas">
+            <div class="location-text">Las Vegas <br><span class="location-subtext">Nov 19-21, 2025</span></div>
         </div>
     </div>
 
